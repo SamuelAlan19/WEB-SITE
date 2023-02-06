@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <img src="img/walpapper.webp" id="walpapper" alt="Plano de Fundo">
+
+
+
+    <div class="box">
+        <label id="titulo">SM COMPUTER's</label>
+        <label id="descricao">Entre com sua Conta</label>     
+            <div class="form1">
+                <form method="POST" action="http://localhost/site/login/check">
+                    <div class="box_input">
+                        <input class="usuario" type="text" name="email" placeholder="E-mail">
+                        <input class="senha" type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <div class="box_login">
+                        <button type="submit" class="btn-login">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form2">
+                <form method="POST" action="http://localhost/site/cadastro">
+                    <div class="box_login">
+                        <button type="submit" class="btn-cadastro">Cadastro</button>
+                    </div>
+                </form>
+            </div>
+        
+        <div class="mg_error">
+            {% if error != '' %}
+            <span class="msg_error">Login Inválido</span>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se!</title>
+
+    <link rel="stylesheet" href="styleCadastro.css">
+</head>
+
+<body>
+
+    <img src="img/fundo.webp" id="fundo" alt="Fundo">
+
+    <header>
+        <div class="content_area">
+            <p>Realize seu Cadastro!</p>
+        </div>
+    </header>
+
+    <div class="box">
+
+        <h1>Preencha os Dados</h1>
+        <form onsubmit="senhaOK()" method="POST" action="http://localhost/site/cadastro/validar">
+            <div class="inputs">
+                <label id="nome">Nome: <input type="text" class="nome" name="nome" onkeydown= "return lettersOnly()" maxlength="30" minlength="8" required></label><br>
+                <label id="email">E-mail: <input type="text" class="email" name="email" maxlength="30" minlength="8" required></label><br>
+                <label id="senha">Senha: <input type="text" class="senha" name="senha" maxlength="30" minlength="8" onchange="confereSenha()" required></label><br>
+                <label id="confirmar">Confirmar Senha: <input type="text" class="confirmar_senha" name="confirmar_senha" maxlength="30" minlength="8" onchange="confereSenha()" required></label>
+            </div>
+            <div class="buttons">
+                <button type="reset" class="cancelar">Cancelar</button>
+                <input type="submit" class="cadastrar" name="submit">
+            </div>
+        </form>
+        <div class="link">
+            <a href="http://localhost/site/cadastro/logar">Logar</a>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
