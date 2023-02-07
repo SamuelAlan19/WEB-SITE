@@ -87,9 +87,22 @@
     transition: all 0.5s;
 }
 
+#cursos-menu {
+    color: white;
+}
+
+#cursos-menu:hover {
+    text-decoration: underline;
+    text-shadow: blue 0.5em 0.5em 0.5em;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: all 0.5s;
+}
+
 #contact-menu {
     color: white;
 }
+
 
 #contact-menu:hover {
     text-decoration: underline;
