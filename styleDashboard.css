@@ -145,23 +145,20 @@
 
 #mainSlider .carousel-caption h2 {
     text-shadow: blue 0.05em 0.05em 0.5em;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 200px;
-    margin-bottom: 30px;
     font-weight: bold;
 }
 
 #mainSlider .carousel-caption p {
     text-shadow: blue 0.05em 0.05em 0.5em;
     font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 100px;
     color: #FFF;
     font-weight: bold;
 }
 
 #mainSlider .carousel-inner {
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 20px;
 }
 
@@ -252,29 +249,31 @@
     row-gap: 3rem;
     display: grid;
     justify-content: center;
-    column-gap: 3rem;
+    column-gap: 10rem;
     box-shadow: 8px 10px 10px black;
     border-radius: 10px;
     height: 20%;
     width: 100%;
     background: rgb(110, 110, 110);
     padding: 20px 20px;
-    border: 10px double white;
+    border: 5px solid black;
 }
 
 .banner {
     text-align: center;
     align-items: center;
     transition: all 0.5s;
+    border-radius: 70px;
+    padding: 15px;
+    border: 10px double white;
+    width: 400px;
+    height: auto;
 }
 
 .banner:hover {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
     cursor: pointer;    
-    border-radius: 70px;
-    padding: 15px;
-    border: 10px double black;
     box-shadow: 8px 10px 10px black;
 }
 
@@ -285,8 +284,8 @@
 }
 
 #banner-image {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 20%;
     object-fit: cover;
     border: 3px solid black;
@@ -294,46 +293,97 @@
 
 .videos {
     padding: 20px;
-    position: relative;
+    display: grid;
+    flex-wrap: wrap;
 }
 
 .video {
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    height: auto;
+    height: 350px;
     background-color: rgba(110, 110, 110);
     border: 3px solid black;
     border-radius: 30px;
     padding: 10px 40px;
-    position: absolute;
     display: flex;
 }
 
 #imagem-video {
-    height: auto;
+    height: 250px;
     width: 70%;
     border-radius: 40px;
     border: 10px double black;
     padding: 10px;
     overflow: hidden;
     cursor: pointer;
+    margin: auto auto;
     box-shadow: 8px 10px 10px black;
+    transition: all 0.5s;
 }
 
-.video h4 {
-    font-size: 25px;
+#imagem-video:hover {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    box-shadow: none;
+    border-radius: 40px;
+    border: 10px double white;
+}
+
+.video h1 {
+    font-size: 50px;
     margin-left: 20px;
     text-align: center;
+    margin: auto auto;
     padding: 50px;
     color: red;
     text-shadow: black 0.5em 0.5em 0.5em;
 }
 
 .video p {
+    background-color: rgb(172, 172, 172);
     font-size: 15px;
+    margin: auto auto;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     font-weight: bold;
-    color: white;
+    color: black;
+    box-shadow: 8px 10px 10px 10px black;
+    border-radius: 30px;
+    text-shadow: white 0.5em 0.5em 0.5em;
+}
+
+.lista {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: rgba(110, 110, 110);
+    padding: 40px 40px;
+}
+
+.playlist {
+    margin: auto auto;
+    background-color: rgb(172, 172, 172);
+    border: 3px solid black;
+    border-radius: 30px;
+    
+}
+
+.playlist h1 {
+    color: black;
+    text-shadow: white 0.5em 0.5em 0.5em;
+    margin: auto auto;
+    text-align: center;
+    padding: 20px; 
+}
+
+.playlist p {
+    color: black;
+    text-shadow: white 0.5em 0.5em 0.5em;
+    margin: auto auto;
+    text-align: center;
+    padding: 10px; 
+    font-weight: bold;
 }
