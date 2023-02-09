@@ -26,16 +26,16 @@
     <script src="https://kit.fontawesome.com/22bd473149.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-
 </head>
 
 <body>
+
+    <img src="img/fundo.avif" alt="Plano de Fundo" id="fundo">
 
     <header>
         <nav class="navbar fixed-top navbar-dark">
             <img class="logo" src="img/hdcagency_logo.svg" alt="Samuel's Agency"> <span id="welcome"> Bem
                 Vindo, {{nome_user}} </span>
-
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="contact-menu">Contato</a>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <a class="nav-link" href="http://localhost/site/dashboard/logout" id="logout">Sair</a>
                     </li>
                 </ul>
@@ -107,148 +107,206 @@
                 </a>
             </div>
         </div>
-        <div class="mentoria">
-            <div class="initial-text">
-                <div>
-                    <p style="text-decoration: underline; font-weight: bold; color: red;
+        <div id="about-team">
+            <div class="lista">
+                <div class="playlist">
+                    <h3 style="text-align: center; text-shadow: white 0.5em 0.5em 0.5em; font-weight: bold; color:red">↠ Disfrute dos melhores Orientadores ↞ </h3>
+                </div>
+            </div>
+            <div class="mentoria">
+                <div class="initial-text">
+                    <div>
+                        <p style="text-decoration: underline; font-weight: bold; color: red;
                     text-shadow: black 0.5em 0.5em 0.5em;">Melhor time de mentores do Brasil</p>
-                    <h5 style="font-weight: bold; text-shadow: blue 0.05em 0.05em 0.5em;">Mentoria Individuais!</h5>
+                        <h5 style="font-weight: bold; text-shadow: blue 0.05em 0.05em 0.5em;">Mentoria Individuais!</h5>
+                    </div>
+                    <div>
+                        <p>Você vai agendar mentorias totalmente Individuais com o maior time de mentores do Brasil.
+                            </br>
+                            Essas sessões são essenciais para você tirar dúvidas e receber feedback.
+                        </p>
+                        <p>A rentabilidade de uma organização pode ser medida de diversas formas.</br> Tudo vai depender
+                            da
+                            visão que o empreendedor tem para o seu negócio.</p>
+                        <p>você precisa saber onde quer chegar e o quê e como vai fazer para chegar lá.</br> Nesse
+                            processo
+                            de planejamento é essencial que você experimente o poder da mentoria.</p>
+                        <p
+                            style="text-decoration: underline; font-weight: bold; text-shadow: blue 0.05em 0.05em 0.5em;">
+                            Conheça nossos mentores ↠</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Você vai agendar mentorias totalmente Individuais com o maior time de mentores do Brasil.
-                        </br>
-                        Essas sessões são essenciais para você tirar dúvidas e receber feedback.
+                <div class="fotos">
+                    <div class="foto">
+                        <img src="img/pessoa1.avif" alt="person1" id="person">
+                        <p>Robson A.</p>
+                        <p>Developer at Loft</p>
+                        <p>Senior Software at Loft. Já atuou em empresas como OLX Brasil.</p>
+                    </div>
+                    <div class="foto">
+                        <img src="img/pessoa2.avif" alt="person2" id="person">
+                        <p>Odair B.</p>
+                        <p>Tech Manager at Nubak</p>
+                        <p>Mais de 18 anos trabalhando em desenvolvimento de software.</p>
+                    </div>
+                    <div class="foto">
+                        <img src="img/pessoa5.avif" alt="person3" id="person">
+                        <p>Marianna K.</p>
+                        <p>Developer at Nexo Jornal</p>
+                        <p>Já trabalhou em exmpresas como RCKT entre outras. Atua no mercado por mais de 10 anos.</p>
+                    </div>
+                    <div class="foto">
+                        <img src="img/pessoa4.avif" alt="person4" id="person">
+                        <p>Amanda G.</p>
+                        <p>Developer at Catraca Livre</p>
+                        <p>Já atuou em empresas como Nexo Jornal, Lopes Consultoria e Habibi's.</p>
+                    </div>
+                    <div class="foto">
+                        <img src="img/pessoa3.avif" alt="person4" id="person">
+                        <p>Roberto J.</p>
+                        <p>Enge Manager at Loadsmart</p>
+                        <p>Engineering Manager na Loadsmart, liderando times cross-funcionais de Front-end.</p>
+                    </div>
+                    <div class="foto">
+                        <img src="img/pessoa6.avif" alt="person4" id="person">
+                        <p>Priscila A.</p>
+                        <p>Head at Exame</p>
+                        <p>Head of Development at Exame. Já atuou em empresas como Dasa, Bionexo, entre outras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about-services">
+            <div class="lista">
+                <div class="playlist">
+                    <h3 style="text-align: center; text-shadow: white 0.5em 0.5em 0.5em; font-weight: bold; color:red">↠ Serviços Imperdíveis ↞ </h3>
+                </div>
+            </div>
+            <div class="serviços">
+                <div class="informativos">
+                    <div class="banner">
+                        <p style="font-weight: bold; color: white;">Terças e Quintas às 20hrs</p>
+                        <h4 style="font-weight: bold; ">Participe de nossas Lives Semanais</h4>
+                        <p style="color: white">Você vai aprender ao longo de 8 semanas, e participar de aulas ao vivo
+                            duas
+                            vezes na semana. Ao total, você vai ter mais de 16h de aulas com os melhores profissionais
+                            do
+                            Brasil.</p>
+                        <img src="img/live.avif" alt="live" id="banner-image">
+                    </div>
+                    <div class="banner">
+                        <p style="font-weight: bold; color: white;">Materiais de apoio</p>
+                        <h4 style="font-weight: bold;">Aprenda no seu ritmo</h4>
+                        <p style="color: white">Elas ficam gravadas pra você assistir depois. Além disso, você vai ter
+                            acesso aos materiais da plataforma que disponibilizamos artigos, vídeo-aulas e outros
+                            conteúdos
+                            para
+                            complementar seu aprendizado.</p>
+                        <img src="img/aprenda.avif" alt="aprenda" id="banner-image">
+                    </div>
+                    <div class="banner">
+                        <p style="font-weight: bold; color: white;">Conclua cada curso</p>
+                        <h4 style="font-weight: bold;">Receba certificado reconhecido</h4>
+                        <p style="color: white">Você vai aprender ao longo de 8 semanas, e participar de aulas ao vivo
+                            duas
+                            vezes na semana. Ao total, você vai ter mais de 16h de aulas com os melhores profissionais
+                            do
+                            Brasil.</p>
+                        <img src="img/certificado.jpg" alt="live" id="banner-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about-cursos">
+            <div class="lista">
+                <div class="playlist">
+                    <h1> ↠ Lista de Cursos Disponíveis ↞ </h1>
+                    <p>Selecione</p>
+                    <p> ↠ Clique & Descubra ↞ </p>
+                </div>
+            </div>
+            <div class="videos">
+                <div class="video">
+                    <img src="img/sql.jpg" alt="imagem" id="imagem-video" class="video1"><div id="icon"><i class='bx bxs-movie-play bx-flashing'></i></div>
+                    <h1>→</h1>
+                    <p>SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais. Ela é uma
+                        linguagem
+                        declarativa e que não necessita de profundos conhecimentos de programação para que alguém
+                        possa
+                        começar a escrever queries que trazem resultados de acordo com o que você está
+                        buscando. SQL significa Standard Query Language. A linguagem é um grande padrão de banco de
+                        dados.
+                        Isto decorre da sua simplicidade e facilidade de uso. Ela se diferencia de outras linguagens
+                        de
+                        consulta a banco de dados no sentido em que uma consulta SQL especifica a forma do resultado
+                        e
+                        não o
+                        caminho para chegar a ele.
                     </p>
-                    <p>A rentabilidade de uma organização pode ser medida de diversas formas.</br> Tudo vai depender da
-                        visão que o empreendedor tem para o seu negócio.</p>
-                    <p>você precisa saber onde quer chegar e o quê e como vai fazer para chegar lá.</br> Nesse processo
-                        de planejamento é essencial que você experimente o poder da mentoria.</p>
-                    <p style="text-decoration: underline; font-weight: bold; text-shadow: blue 0.05em 0.05em 0.5em;">
-                        Conheça nossos mentores →</p>
                 </div>
-            </div>
-            <div class="fotos">
-                <div class="foto">
-                    <img src="img/pessoa1.avif" alt="person1" id="person">
-                    <p>Robson A.</p>
-                    <p>Developer at Loft</p>
-                    <p>Senior Software at Loft. Já atuou em empresas como OLX Brasil.</p>
-                </div>
-                <div class="foto">
-                    <img src="img/pessoa2.avif" alt="person2" id="person">
-                    <p>Odair B.</p>
-                    <p>Tech Manager at Nubak</p>
-                    <p>Mais de 18 anos trabalhando em desenvolvimento de software.</p>
-                </div>
-                <div class="foto">
-                    <img src="img/pessoa5.avif" alt="person3" id="person">
-                    <p>Marianna K.</p>
-                    <p>Developer at Nexo Jornal</p>
-                    <p>Já trabalhou em exmpresas como RCKT entre outras. Atua no mercado por mais de 10 anos.</p>
-                </div>
-                <div class="foto">
-                    <img src="img/pessoa4.avif" alt="person4" id="person">
-                    <p>Amanda G.</p>
-                    <p>Developer at Catraca Livre</p>
-                    <p>Já atuou em empresas como Nexo Jornal, Lopes Consultoria e Habibi's.</p>
-                </div>
-                <div class="foto">
-                    <img src="img/pessoa3.avif" alt="person4" id="person">
-                    <p>Roberto J.</p>
-                    <p>Enge Manager at Loadsmart</p>
-                    <p>Engineering Manager na Loadsmart, liderando times cross-funcionais de Front-end.</p>
-                </div>
-                <div class="foto">
-                    <img src="img/pessoa6.avif" alt="person4" id="person">
-                    <p>Priscila A.</p>
-                    <p>Head at Exame</p>
-                    <p>Head of Development at Exame. Já atuou em empresas como Dasa, Bionexo, entre outras.</p>
-                </div>
-            </div>
-        </div>
-        <div class="serviços">
-            <div class="informativos">
-                <div class="banner">
-                    <p style="font-weight: bold; color: white;">Terças e Quintas às 20hrs</p>
-                    <h4 style="font-weight: bold; ">Participe de nossas Lives Semanais</h4>
-                    <p style="color: white">Você vai aprender ao longo de 8 semanas, e participar de aulas ao vivo duas
-                        vezes na semana. Ao total, você vai ter mais de 16h de aulas com os melhores profissionais do
-                        Brasil.</p>
-                    <img src="img/live.avif" alt="live" id="banner-image">
-                </div>
-                <div class="banner">
-                    <p style="font-weight: bold; color: white;">Materiais de apoio</p>
-                    <h4 style="font-weight: bold;">Aprenda no seu ritmo</h4>
-                    <p style="color: white">Elas ficam gravadas pra você assistir depois. Além disso, você vai ter
-                        acesso aos materiais da plataforma que disponibilizamos artigos, vídeo-aulas e outros conteúdos
+                <div class="video">
+                    <img src="img/php.jpg" alt="imagem" id="imagem-video" class="video2"><div id="icon"><i class='bx bxs-movie-play bx-flashing'></i></div>
+                    <h1>→</h1>
+                    <p>PHP (um inicialismo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script do
+                        lado
+                        do
+                        servidor de código aberto que pode ser utilizada junto com HTML para construir aplicações
+                        web e
+                        sites dinâmicos. HTML pode ser usando dentro do PHP, mas não vice versa. A melhor coisa em
+                        usar
+                        o
+                        PHP é que ele é extremamente simples para um iniciante, mas oferece muitos recursos
+                        avançados
                         para
-                        complementar seu aprendizado.</p>
-                    <img src="img/aprenda.avif" alt="aprenda" id="banner-image">
+                        um programador profissional. Não tenha medo de ler a longa lista de recursos do PHP. Pode
+                        entrar
+                        com
+                        tudo, o mais rápido que puder, e começar a escrever scripts simples em poucas horas.
+                    </p>
                 </div>
-                <div class="banner">
-                    <p style="font-weight: bold; color: white;">Conclua cada curso</p>
-                    <h4 style="font-weight: bold;">Receba certificado reconhecido</h4>
-                    <p style="color: white">Você vai aprender ao longo de 8 semanas, e participar de aulas ao vivo duas
-                        vezes na semana. Ao total, você vai ter mais de 16h de aulas com os melhores profissionais do
-                        Brasil.</p>
-                    <img src="img/certificado.jpg" alt="live" id="banner-image">
+                <div class="video">
+                    <img src="img/javascript.jpg" alt="imagem" id="imagem-video" class="video3"><div id="icon"><i class='bx bxs-movie-play bx-flashing'></i></div>
+                    <h1>→</h1>
+                    <p>JavaScript (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em
+                        objetos
+                        com
+                        funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas
+                        usada
+                        também em vários outros ambientes sem browser, tais como node.js, Apache CouchDB e Adobe
+                        Acrobat.
+                        Não se deve confundir o JavaScript com a linguagem de programação Java. Tanto Java quanto
+                        JavaScript
+                        são marcas registradas da Oracle nos Estados Unidos da América e em outros países. No
+                        entanto,
+                        as
+                        duas linguagens de programação possuem sintaxe, semânticas e usos muito diferentes.
+                    </p>
+                </div>
+                <div class="video">
+                    <img src="img/html5.jpg" alt="imagem" id="imagem-video" class="video4"><div id="icon"><i class='bx bxs-movie-play bx-flashing'></i></div>
+                    <h1>→</h1>
+                    <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define
+                        o
+                        significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são
+                        usadas
+                        para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript)
+                        de
+                        uma
+                        página da web. "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja
+                        dentro de
+                        um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo
+                        na
+                        Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante
+                        ativo
+                        na
+                        world wide web.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="lista">
-            <div class="playlist">
-                <h1>- Lista de Cursos Disponíveis - </h1>
-                <p>Selecione</p>
-                <p> - Clique & Descubra - </p>
-            </div>
-        </div>
-        <div class="videos">
-            <div class="video">
-                <img src="img/sql.jpg" alt="imagem" id="imagem-video" class="video1">
-                <h1>→</h1>
-                <p>SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais. Ela é uma linguagem
-                    declarativa e que não necessita de profundos conhecimentos de programação para que alguém possa
-                    começar a escrever queries que trazem resultados de acordo com o que você está
-                    buscando. SQL significa Standard Query Language. A linguagem é um grande padrão de banco de dados.
-                    Isto decorre da sua simplicidade e facilidade de uso. Ela se diferencia de outras linguagens de
-                    consulta a banco de dados no sentido em que uma consulta SQL especifica a forma do resultado e não o
-                    caminho para chegar a ele.
-                </p>
-            </div>
-            <div class="video">
-                <img src="img/php.jpg" alt="imagem" id="imagem-video" class="video2">
-                <h1>→</h1>
-                <p>PHP (um inicialismo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script do lado do
-                    servidor de código aberto que pode ser utilizada junto com HTML para construir aplicações web e
-                    sites dinâmicos. HTML pode ser usando dentro do PHP, mas não vice versa. A melhor coisa em usar o
-                    PHP é que ele é extremamente simples para um iniciante, mas oferece muitos recursos avançados para
-                    um programador profissional. Não tenha medo de ler a longa lista de recursos do PHP. Pode entrar com
-                    tudo, o mais rápido que puder, e começar a escrever scripts simples em poucas horas.
-                </p>
-            </div>
-            <div class="video">
-                <img src="img/javascript.jpg" alt="imagem" id="imagem-video" class="video3">
-                <h1>→</h1>
-                <p>JavaScript (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com
-                    funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada
-                    também em vários outros ambientes sem browser, tais como node.js, Apache CouchDB e Adobe Acrobat.
-                    Não se deve confundir o JavaScript com a linguagem de programação Java. Tanto Java quanto JavaScript
-                    são marcas registradas da Oracle nos Estados Unidos da América e em outros países. No entanto, as
-                    duas linguagens de programação possuem sintaxe, semânticas e usos muito diferentes.
-                </p>
-            </div>
-            <div class="video">
-                <img src="img/html5.jpg" alt="imagem" id="imagem-video" class="video4">
-                <h1>→</h1>
-                <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o
-                    significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas
-                    para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma
-                    página da web. "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de
-                    um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na
-                    Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na
-                    world wide web.
-                </p>
-            </div>
+        <div id="about-contact">
+            <h1 style="text-align: center; text-shadow: white 0.5em 0.5em 0.5em; font-weight: bold; color:red">TRABALHE CONOSCO</h1>
+
         </div>
     </main>
 </body>
