@@ -26,12 +26,10 @@ $(navBtn).click(function () {
     }
 
     $([document.documentElement, document.body]).animate({
-        scrollTop: $(scrollTo).offset().top - 10
+        scrollTop: $(scrollTo).offset().top - 70
     }, 100);
 
 });
-
-document.getElementById("about-team").scrollIntoView();
 
 let sql = document.querySelector('.video1');
 sql.addEventListener('click', () => { window.location.href = "https://www.youtube.com/playlist?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r"; })
@@ -44,3 +42,15 @@ js.addEventListener('click', () => { window.location.href = "https://www.youtube
 
 let html = document.querySelector('.video4');
 html.addEventListener('click', () => { window.location.href = "https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"; })
+
+let sql1 = document.querySelector('#video1');
+sql1.addEventListener('click', () => { window.location.href = "https://www.youtube.com/playlist?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r"; })
+
+let php1 = document.querySelector('#video2');
+php1.addEventListener('click', () => { window.location.href = "https://www.youtube.com/playlist?list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k"; })
+
+let js1 = document.querySelector('#video3');
+js1.addEventListener('click', () => { window.location.href = "https://www.youtube.com/playlist?list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm"; })
+
+let html1 = document.querySelector('#video4');
+html1.addEventListener('click', () => { window.location.href = "https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"; })
