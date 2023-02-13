@@ -11,20 +11,16 @@
     <link href='https://css.gg/arrow-long-right-e.css' rel='stylesheet'>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Script -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/22bd473149.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
 
 </head>
 
@@ -37,8 +33,7 @@
             <img class="logo" src="img/hdcagency_logo.svg" alt="Samuel's Agency"> <span id="welcome"> Bem
                 Vindo, {{nome_user}} </span>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -110,8 +105,7 @@
         <div id="about-team">
             <div class="lista">
                 <div class="playlist">
-                    <h3
-                        style="text-align: center; text-shadow: white 0.5em 0.5em 0.5em; font-weight: bold; color:red; line-height: 60px;">
+                    <h3 style="text-align: center; text-shadow: white 0.5em 0.5em 0.5em; font-weight: bold; color:red; line-height: 60px;">
                         ↠
                         Disfrute dos melhores Orientadores ↞ </h3>
                 </div>
@@ -134,8 +128,7 @@
                         <p>você precisa saber onde quer chegar e o quê e como vai fazer para chegar lá.</br> Nesse
                             processo
                             de planejamento é essencial que você experimente o poder da mentoria.</p>
-                        <p
-                            style="text-decoration: underline; font-weight: bold; text-shadow: blue 0.05em 0.05em 0.5em;">
+                        <p style="text-decoration: underline; font-weight: bold; text-shadow: blue 0.05em 0.05em 0.5em;">
                             Conheça nossos mentores ↠</p>
                     </div>
                 </div>
@@ -182,8 +175,7 @@
         <div id="about-services">
             <div class="lista">
                 <div class="playlist">
-                    <h3
-                        style="text-align: center; text-shadow: white 0.5em 0.5em 0.5em; font-weight: bold; color:red; line-height: 60px;">
+                    <h3 style="text-align: center; text-shadow: white 0.5em 0.5em 0.5em; font-weight: bold; color:red; line-height: 60px;">
                         ↠
                         Serviços Imperdíveis ↞ </h3>
                 </div>
@@ -313,27 +305,41 @@
             </div>
         </div>
     </main>
-    <footer>
+    <!-- <footer>
         <div id="about-contact">
-            <h2 style="text-align: center; text-shadow: white 0.5em 0.5em 0.5em; font-weight: bold; color:red; padding: 30px">Dúvidas?
-                Fale Conosco!</h3>
-                <div id="contact-form">
-                    <form action="">
-                        <input type="email" class="form-control" placeholder="E-mail" name="email"> </input>
-                        <input type="text" class="form-control" placeholder="Assunto" name="subject"></input>
-                        <textarea class="form-control" rows="3" placeholder="Sua mensagem ..."
-                            name="message"></textarea>
-                        <input type="submit" class="main-btn" value="Enviar"></input>
-                    </form>
-                </div>
+            <h2> Dúvidas? Fale Conosco!</h2>
+            <div id="contact-form">
+                <form action="Mailer.php" method="POST" onsubmit="Message()">
+                    <input type="email" class="form-control" placeholder="E-mail" name="email" require maxlength="45"></input>
+                    <input type="text" class="form-control" placeholder="Assunto" name="subject" require maxlength="30"></input>
+                    <textarea class="form-control" rows="3" placeholder="Sua mensagem ..." name="message" style="resize: none;" require maxlength="200"></textarea>
+                    <input type="submit" class="main-btn" name="Enviar" value="Enviar"></input>
+                </form>
+            </div>
         </div>
         <div class="container">
             <p>Desenvolvidor por <a href="https://github.com/SamuelAlan19" target="_blank"> Samuel's Agency</a>
                 &copy; 2023</p>
         </div>
-    </footer>
-</body>
+    </footer> -->
 
+    <form action="Mailer.php" method="post">
+        <label for="Nome">Nome:</label>
+        <input type="text" name="Nome" size="35" />
+
+        <label for="Email">E-mail:</label>
+        <input type="text" name="Email" size="35" />
+
+        <label for="Fone">Telefone:</label>
+        <input type="text" name="Fone" size="35" />
+
+        <label for="Mensagem">Mensagem:</label>
+        <textarea name="Mensagem" rows="8" cols="40"></textarea>
+
+        <input type="submit" name="Enviar" value="Enviar" />
+    </form>
+
+</body>
 <script src="dashboard.js"></script>
 
 </html>

@@ -10,7 +10,7 @@ class DashboardController
             'cache' => '/path/to/compilation_cache',
             'auto_reload' => true,
         ]);
-        $template = $twig->load('dashboard.html');
+        $template = $twig->load('dashboard.php');
         $parameters['nome_user'] = $_SESSION['usr']['nome_user']; 
 
         return $template->render($parameters);

@@ -426,12 +426,20 @@
     padding: 20px;
 }
 
+#about-contact h2 {
+    text-align: center;
+    text-shadow: white 0.5em 0.5em 0.5em;
+    font-weight: bold;
+    color: red;
+    padding: 30px
+}
+
 #about-contact {
     margin: 10px 600px;
     text-align: center;
 }
 
-.container p{
+.container p {
     margin-left: 400px;
     color: white;
     margin-top: 50px;
@@ -445,14 +453,14 @@
     color: white;
 }
 
-#contact-form input{
+#contact-form input {
     margin-bottom: 20px;
     border-radius: 10px;
     border: 10px double white;
     text-align: center;
 }
 
-#contact-form textarea{
+#contact-form textarea {
     margin-bottom: 20px;
     border-radius: 10px;
     border: 10px double white;

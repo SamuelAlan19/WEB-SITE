@@ -54,3 +54,7 @@ js1.addEventListener('click', () => { window.location.href = "https://www.youtub
 
 let html1 = document.querySelector('#video4');
 html1.addEventListener('click', () => { window.location.href = "https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"; })
+
+function Message() {
+    alert('Mensagem enviada com sucesso!');
+}
