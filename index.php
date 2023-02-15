@@ -14,8 +14,6 @@ require_once 'app/model/User.php';
 
 require_once 'lib/Samuel/Database/conexao.php';
 
-require_once 'phpmailer/class.phpmailer.php';
-
 require_once 'vendor/autoload.php';
 
     $core = new Core; 

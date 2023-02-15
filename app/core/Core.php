@@ -50,7 +50,7 @@ class Core
             $pg_permission = ['DashboardController'];
 
             if (!isset($this->controller) || !in_array($this->controller, $pg_permission)) {
-                $this->controller ='DashboardController';
+                $this->controller = ('DashboardController');
                 $this->method = 'index';
             }
         } else {

@@ -11,8 +11,10 @@ class DashboardController
             'auto_reload' => true,
         ]);
         $template = $twig->load('dashboard.php');
-        $parameters['nome_user'] = $_SESSION['usr']['nome_user']; 
-
+        $parameters['nome_user'] = $_SESSION['usr']['nome_user'];
+        
+        require_once('app/core/Mailer.php');
+        
         return $template->render($parameters);
     }
 
@@ -22,4 +24,8 @@ class DashboardController
 
         header('Location: http://localhost/site'); 
     }
+
+    // public function enviar() {
+    //     require_once('app/view/Mailer.php'); 
+    // }
 }

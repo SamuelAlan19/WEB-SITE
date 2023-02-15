@@ -20,8 +20,6 @@
     <script src="https://kit.fontawesome.com/22bd473149.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-
-
 </head>
 
 <body>
@@ -305,7 +303,7 @@
             </div>
         </div>
     </main>
-    <!-- <footer>
+    <footer>
         <div id="about-contact">
             <h2> Dúvidas? Fale Conosco!</h2>
             <div id="contact-form">
@@ -321,23 +319,26 @@
             <p>Desenvolvidor por <a href="https://github.com/SamuelAlan19" target="_blank"> Samuel's Agency</a>
                 &copy; 2023</p>
         </div>
-    </footer> -->
+    </footer>
 
-    <form action="Mailer.php" method="post">
-        <label for="Nome">Nome:</label>
-        <input type="text" name="Nome" size="35" />
 
-        <label for="Email">E-mail:</label>
-        <input type="text" name="Email" size="35" />
 
-        <label for="Fone">Telefone:</label>
-        <input type="text" name="Fone" size="35" />
+        <!-- <form action="Mailer.php" method="post" onsubmit="enviar()">
+            <label for="Nome">Nome:</label>
+            <input type="text" name="Nome" size="35" />
 
-        <label for="Mensagem">Mensagem:</label>
-        <textarea name="Mensagem" rows="8" cols="40"></textarea>
+            <label for="Email">E-mail:</label>
+            <input type="text" name="Email" size="35" />
 
-        <input type="submit" name="Enviar" value="Enviar" />
-    </form>
+            <label for="Fone">Telefone:</label>
+            <input type="text" name="Fone" size="35" />
+
+            <label for="Mensagem">Mensagem:</label>
+            <textarea name="Mensagem" rows="8" cols="40"></textarea>
+
+            <a href="#"><input type="submit" name="Enviar" value="Enviar" /></a>
+        </form> -->
+
 
 </body>
 <script src="dashboard.js"></script>
