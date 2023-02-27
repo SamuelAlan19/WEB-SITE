@@ -24,8 +24,4 @@ class DashboardController
 
         header('Location: http://localhost/site'); 
     }
-
-    // public function enviar() {
-    //     require_once('app/view/Mailer.php'); 
-    // }
 }

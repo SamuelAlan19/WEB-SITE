@@ -1,50 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.php">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
+	<!DOCTYPE html>
+	<html lang="en">
 
-<footer>
-<?php
-$de		= filter_input(INPUT_POST, "email");
-$assunto		= filter_input(INPUT_POST, "subject");
-$mensagem	= filter_input(INPUT_POST, "message");
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="style.php">
+	</head>
 
-require_once("phpmailer/class.phpmailer.php");
-
-define('GUSER', 'samuel.alan.58@gmail.com');
-define('GPWD', 'mlvpjzcpehrinhan');
+	<body>
+		<div class="footer">
+			<?php
 
 
-function smtpmailer($para, $de, $assunto, $corpo)
-{
-	global $error;
-	$mail = new PHPMailer();
-	$mail->IsSMTP();
-	$mail->SMTPDebug = 2;
-	$mail->SMTPAuth = true;
-	$mail->SMTPSecure = 'tls';
-	$mail->Host = 'smtp.gmail.com';
-	$mail->Port = 587;
-	$mail->Username = GUSER;
-	$mail->Password = GPWD;
-	$mail->SetFrom($de);
-	$mail->Subject = $assunto;
-	$mail->Body = $corpo;
-	$mail->AddAddress($para);
-	$mail->Send();
-}
+			$de        = filter_input(INPUT_POST, "email");
+			$assunto        = filter_input(INPUT_POST, "subject");
+			$mensagem    = filter_input(INPUT_POST, "message");
 
-(smtpmailer('samuel.alan.58@gmail.com', $de, $assunto , $mensagem)) 
+			require_once("phpmailer/class.phpmailer.php");
 
-?>
-</footer>
+			define('GUSER', 'samuel.alan.58@gmail.com');
+			define('GPWD', 'mlvpjzcpehrinhan');
 
-</html>
+
+			function smtpmailer($para, $de, $assunto, $corpo)
+			{
+				global $error;
+				$mail = new PHPMailer();
+				$mail->IsSMTP();
+				$mail->SMTPDebug = 2;
+				$mail->SMTPAuth = true;
+				$mail->SMTPSecure = 'tls';
+				$mail->Host = 'smtp.gmail.com';
+				$mail->Port = 587;
+				$mail->Username = GUSER;
+				$mail->Password = GPWD;
+				$mail->SetFrom($de);
+				$mail->Subject = $assunto;
+				$mail->Body = $corpo;
+				$mail->AddAddress($para);
+				$mail->Send();
+			}
+
+			if (smtpmailer('samuel.alan.58@gmail.com', $de, $assunto, $mensagem)) {
+
+				Header('Location: http://localhost/site/dashboard.php');
+			}
+			?>
+		</div>
+	</body>
+
+	</html>

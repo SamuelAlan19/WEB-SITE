@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SM COMPUTER's</title>
 
+
     <link rel="stylesheet" href="styleDashboard.css">
+    <link rel="stylesheet" href="style.php">
     <link href='https://css.gg/arrow-long-right-e.css' rel='stylesheet'>
 
     <!-- Bootstrap -->
@@ -307,9 +309,9 @@
         <div id="about-contact">
             <h2> Dúvidas? Fale Conosco!</h2>
             <div id="contact-form">
-                <form action="Mailer.php" method="POST" onsubmit="Message()">
+                <form action="dashboard.php" method="POST" onsubmit="Message()">
                     <input type="email" class="form-control" placeholder="E-mail" name="email" require maxlength="45"></input>
-                    <input type="text" class="form-control" placeholder="Assunto" name="subject" require maxlength="30"></input>
+                    <input type="text" class="form-control" placeholder="Assunto" name="subject" require maxlength="45"></input>
                     <textarea class="form-control" rows="3" placeholder="Sua mensagem ..." name="message" style="resize: none;" require maxlength="200"></textarea>
                     <input type="submit" class="main-btn" name="Enviar" value="Enviar"></input>
                 </form>
@@ -319,27 +321,9 @@
             <p>Desenvolvidor por <a href="https://github.com/SamuelAlan19" target="_blank"> Samuel's Agency</a>
                 &copy; 2023</p>
         </div>
+
+
     </footer>
-
-
-
-        <!-- <form action="Mailer.php" method="post" onsubmit="enviar()">
-            <label for="Nome">Nome:</label>
-            <input type="text" name="Nome" size="35" />
-
-            <label for="Email">E-mail:</label>
-            <input type="text" name="Email" size="35" />
-
-            <label for="Fone">Telefone:</label>
-            <input type="text" name="Fone" size="35" />
-
-            <label for="Mensagem">Mensagem:</label>
-            <textarea name="Mensagem" rows="8" cols="40"></textarea>
-
-            <a href="#"><input type="submit" name="Enviar" value="Enviar" /></a>
-        </form> -->
-
-
 </body>
 <script src="dashboard.js"></script>
 
